@@ -66,7 +66,7 @@ async function sendMessage(client, userId, message) {
     });
 
     console.log("Теперь вы должны быть подключены.");
-    console.log(client.session.save()); // Сохраните эту строку, чтобы избежать повторного входа в систему.
+    console.log(client.session.save()); 
 
     const userId = await addContact(client, "+79625603653", "Вадим", "Муравьев");
 
