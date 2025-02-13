@@ -29,7 +29,7 @@ async function addContact(client, phoneNumber, firstName, lastName) {
         console.log(`Контакт ${firstName} ${lastName} добавлен.`);
         
         if (result.users.length > 0) {
-            return result.users[0].id; // Возвращаем userId контакта
+            return result.users[0].id;
         } else {
             console.error("Ошибка: пользователь не найден.");
             return null;
